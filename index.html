@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>현장 근무자 사전 안전 교육 | ■■승강기</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Montserrat:wght@700;800&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  :root { --navy: #0e2135; --ink: #111922; --dim: #57626e; --faint: #98a1ab; --line: #e1e5e9; --soft: #f3f5f7; --accent: #c0161c; --sky: #4f86ba; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--soft); color: var(--ink); font: 15px/1.65 "Noto Sans KR", sans-serif; }
+  header { background: #fff; border-bottom: 1px solid var(--line); }
+  .in { max-width: 980px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+  header .in { height: 70px; display: flex; align-items: center; justify-content: space-between; }
+  .logo { display: flex; align-items: center; gap: 10px; color: var(--navy); text-decoration: none; }
+  .logo b { font: 800 21px/1 Montserrat, sans-serif; } .logo small { display: block; font-size: 10.5px; letter-spacing: .3em; color: var(--dim); margin-top: 3px; }
+  header .r { font-size: 13px; color: var(--dim); }
+  main .in { padding-block: 34px 60px; }
+  .crumb { font-size: 13px; color: var(--faint); }
+  h1 { font: 900 clamp(26px, 4vw, 36px)/1.25 "Noto Sans KR"; color: var(--navy); margin: 6px 0 10px; text-wrap: balance; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; } .meta span { background: #fff; border: 1px solid var(--line); padding: 4px 10px; font-size: 13px; color: var(--dim); } .meta .req { color: var(--accent); border-color: #f0c6c7; }
+  .player { position: relative; margin-top: 22px; background: #000; aspect-ratio: 16 / 9; max-width: 100%; overflow: hidden; }
+  .player video { width: 100%; height: 100%; display: block; background: #000; }
+  .cover { position: absolute; inset: 0; display: grid; place-items: center; background: rgba(8,14,22,.55); cursor: pointer; border: 0; color: #fff; width: 100%; }
+  .cover span { display: grid; place-items: center; gap: 10px; font: 500 15px "Noto Sans KR"; }
+  .cover i { width: 76px; height: 76px; border-radius: 50%; background: rgba(255,255,255,.14); border: 2px solid #fff; display: grid; place-items: center; }
+  .cover i::after { content: ''; border-left: 22px solid #fff; border-top: 13px solid transparent; border-bottom: 13px solid transparent; margin-left: 6px; }
+  .bar { position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: rgba(255,255,255,.2); } .bar i { display: block; height: 100%; width: 0; background: var(--accent); }
+  .skip { position: absolute; right: 14px; bottom: 16px; background: rgba(0,0,0,.65); color: #fff; border: 1px solid rgba(255,255,255,.4); padding: 8px 14px; font: 500 13px "Noto Sans KR"; cursor: pointer; }
+  .skip:disabled { opacity: .7; cursor: default; }
+  .note { margin-top: 10px; font-size: 13px; color: var(--dim); }
+  .done { margin-top: 26px; background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--navy); padding: 22px 24px; }
+  .done h2 { margin: 0 0 6px; font: 700 19px "Noto Sans KR"; color: var(--navy); }
+  .done label { display: flex; gap: 10px; align-items: flex-start; padding: 9px 0; border-bottom: 1px solid var(--soft); cursor: pointer; }
+  .done input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--navy); flex: none; }
+  .go { display: inline-block; margin-top: 18px; background: var(--navy); color: #fff; text-decoration: none; padding: 13px 22px; font-weight: 700; }
+  .go[aria-disabled="true"] { background: #b9c0c7; pointer-events: none; }
+  .no { margin-left: 12px; font: 500 13px "IBM Plex Mono", monospace; color: var(--dim); }
+  .no b { color: var(--accent); }
+  footer { font-size: 12.5px; color: var(--faint); text-align: center; padding-block: 24px 40px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<header><div class="in">
+  <a class="logo" href="#" aria-label="■■승강기"><svg width="28" height="28" viewBox="0 0 30 30" aria-hidden="true"><rect x="3" y="3" width="24" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15 7 L20 12 H10 Z" fill="currentColor"/><path d="M15 23 L20 18 H10 Z" fill="currentColor"/></svg><span><b>■■ LIFT</b><small>■■승강기 주식회사</small></span></a>
+  <span class="r">인재채용 · 현장직</span>
+</div></header>
+<main><div class="in">
+  <p class="crumb">인재채용 › 금요일 현장 근무자 › 사전 안전 교육</p>
+  <h1>현장 근무자 사전 안전 교육</h1>
+  <div class="meta"><span class="req">필수</span><span>교육 코드 SE-1313</span><span>약 1분</span><span>근무일 13일 (금) 12:13 – 13:13</span></div>
+
+  <div class="player">
+    <video id="v" src="trailer.mp4" poster="poster.jpg" playsinline preload="metadata"></video>
+    <button type="button" class="cover" id="cover" aria-label="교육 영상 재생"><span><i></i>교육 영상 재생 · 소리를 켜 주십시오</span></button>
+    <button type="button" class="skip" id="skip" hidden disabled>13초 뒤 건너뛸 수 있습니다</button>
+    <div class="bar"><i id="bar"></i></div>
+  </div>
+  <p class="note">영상을 끝까지 시청해야 근무 지시서를 열람할 수 있습니다. 시청 기록은 근무자 번호와 함께 관제센터로 전달됩니다.</p>
+
+  <section class="done" id="done" hidden>
+    <h2>교육 이수 확인</h2>
+    <label><input type="checkbox" class="ck"> 교육 영상을 끝까지 시청했습니다.</label>
+    <label><input type="checkbox" class="ck"> 배부받은 근무 수칙을 근무 내내 지니고 있겠습니다.</label>
+    <label><input type="checkbox" class="ck"> 근무는 13:13에 끝납니다. 그 전에 퇴근하지 않습니다.</label>
+    <a class="go" id="go" href="game.html" aria-disabled="true">근무 지시서 열람 →</a><span class="no">근무자 번호 <b>13</b></span>
+  </section>
+</div></main>
+<footer><div class="in">■■승강기 주식회사 · 문의 recruit@■■lift.co.kr · 고장신고 1588-1313 · 모든 근무는 좋게 끝납니다.</div></footer>
+<script>
+(() => {
+  const v = document.getElementById('v'), cover = document.getElementById('cover'), skip = document.getElementById('skip'), bar = document.getElementById('bar'), done = document.getElementById('done'), go = document.getElementById('go');
+  let left = 13, timer = null, finished = false, held = false;
+  const finish = () => { if (finished) return; finished = true; skip.hidden = true; done.hidden = false; done.scrollIntoView({ behavior: 'smooth', block: 'center' }); };
+  cover.onclick = () => {
+    cover.hidden = true; skip.hidden = false; v.play().catch(() => {});
+    timer = setInterval(() => { if (held) return; left--; if (left > 0) skip.textContent = `${left}초 뒤 건너뛸 수 있습니다`; else { clearInterval(timer); skip.disabled = false; skip.textContent = '건너뛰기 ▸'; } }, 1000);
+  };
+  v.addEventListener('click', () => { if (!cover.hidden) return; if (v.paused) { held = false; v.play().catch(() => {}); } else { held = true; v.pause(); } });
+  v.addEventListener('timeupdate', () => { if (v.duration) bar.style.width = (v.currentTime / v.duration * 100) + '%'; });
+  v.addEventListener('ended', finish);
+  skip.onclick = () => { if (skip.disabled) return; v.pause(); finish(); };
+  document.querySelectorAll('.ck').forEach(c => c.onchange = () => { const all = [...document.querySelectorAll('.ck')].every(x => x.checked); go.setAttribute('aria-disabled', all ? 'false' : 'true'); });
+})();
+</script>
+</body>
+</html>
